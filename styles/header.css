@@ -4,8 +4,6 @@ header {
     z-index: 10;
     background-color: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(8px);
-    box-shadow: 0 0 0 100vmax rgba(15, 23, 42, 0.95);
-    clip-path: inset(0 -100vmax);
 }
 
 #primary {
