@@ -61,3 +61,57 @@
         }
     }
 }
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-bottom: 24px;
+    border-top: 1px solid var(--stroke-color);
+    font: var(--text-span);
+    color: var(--text-color-secondary);
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &::after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url('../assets/icons/ArrowRight.svg') no-repeat center;
+        }
+
+        &:hover::after {
+            background-image: url('../assets/icons/ArrowRight-hover.svg');
+        }
+    }
+}
+
+#most-read {
+    padding-bottom: 24px;
+
+    article {
+        display: grid;
+        gap: 8px;
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .tag {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    h3 {
+        font: var(--h2);
+    }
+}
