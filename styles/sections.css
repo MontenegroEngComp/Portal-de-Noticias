@@ -115,3 +115,34 @@
         font: var(--h2);
     }
 }
+
+.content-aside {
+    grid-template-columns: 1fr 488px;
+    align-items: start;
+}
+
+#ai-highlights {
+    article {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    h3 {
+        margin-top: 8px;
+        font: var(--h2);
+    }
+
+    p {
+        margin-top: 4px;
+        font: var(--text-small);
+        color: var(--text-color-secondary);
+    }
+
+    img {
+        width: 176px;
+        height: 176px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+}
