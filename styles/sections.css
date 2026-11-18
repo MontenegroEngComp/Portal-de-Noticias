@@ -20,7 +20,7 @@
     }
 
     .card {
-
+        display: block;
         border-radius: 4px;
         overflow: hidden;
         position: relative;
@@ -87,6 +87,16 @@
         &:hover::after {
             background-image: url('../assets/icons/ArrowRight-hover.svg');
         }
+    }
+}
+
+:is(#most-read, #ai-highlights, #did-you-see) article {
+    position: relative;
+
+    h3 a::after {
+        content: '';
+        position: absolute;
+        inset: 0;
     }
 }
 
