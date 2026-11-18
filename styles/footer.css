@@ -1,0 +1,25 @@
+footer {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 40px;
+
+    .container {
+        display: grid;
+        justify-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 32px;
+        font: var(--text-span);
+        color: var(--text-color-secondary);
+    }
+
+    p {
+        font: var(--text-small);
+        color: var(--text-color-secondary);
+    }
+}
