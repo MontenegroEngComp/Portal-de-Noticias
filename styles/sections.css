@@ -25,6 +25,14 @@
         overflow: hidden;
         position: relative;
 
+        img {
+            transition: transform 0.4s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -97,6 +105,14 @@
         content: '';
         position: absolute;
         inset: 0;
+    }
+
+    img {
+        transition: filter 0.3s ease;
+    }
+
+    &:hover img {
+        filter: brightness(1.15);
     }
 }
 
